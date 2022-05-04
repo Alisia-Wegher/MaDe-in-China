@@ -57,3 +57,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.dropbtn {
+  float: right;
+}
