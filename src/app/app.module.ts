@@ -8,16 +8,24 @@ import { MenuNoGlutineComponent } from './menu-no-glutine/menu-no-glutine.compon
 import { MenuNormaleComponent } from './menu-normale/menu-normale.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
 
 const LISTA_ROUTES = [
   { path: '', component: MenuHomeComponent },
   { path: 'no-glutine', component: MenuNoGlutineComponent },
-  { path: 'normale', component: MenuNormaleComponent }
+  { path: 'normale', component: MenuNormaleComponent },
+  { path: 'whoAreWe', component: WhoAreWeComponent },
 ];
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(LISTA_ROUTES) ],
-  declarations: [ AppComponent, MenuHomeComponent, MenuNoGlutineComponent, MenuNormaleComponent, NavbarComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(LISTA_ROUTES)],
+  declarations: [
+    AppComponent,
+    MenuHomeComponent,
+    MenuNoGlutineComponent,
+    MenuNormaleComponent,
+    NavbarComponent,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
