@@ -7,6 +7,7 @@ import { MenuHomeComponent } from './menu-home/menu-home.component';
 import { MenuNoGlutineComponent } from './menu-no-glutine/menu-no-glutine.component';
 import { MenuNormaleComponent } from './menu-normale/menu-normale.component';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const LISTA_ROUTES = [
   { path: '', component: MenuHomeComponent },
@@ -16,7 +17,7 @@ const LISTA_ROUTES = [
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(LISTA_ROUTES) ],
-  declarations: [ AppComponent, MenuHomeComponent, MenuNoGlutineComponent, MenuNormaleComponent ],
+  declarations: [ AppComponent, MenuHomeComponent, MenuNoGlutineComponent, MenuNormaleComponent, NavbarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
