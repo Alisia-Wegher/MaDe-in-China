@@ -9,12 +9,15 @@ import { MenuNormaleComponent } from './menu-normale/menu-normale.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
+import { MenuBevandeComponent } from './menu-bevande/menu-bevande.component';
+import { NavfooterComponent } from './navfooter/navfooter.component';
 
 const LISTA_ROUTES = [
   { path: '', component: MenuHomeComponent },
   { path: 'no-glutine', component: MenuNoGlutineComponent },
   { path: 'normale', component: MenuNormaleComponent },
   { path: 'whoAreWe', component: WhoAreWeComponent },
+  { path: 'drinks', component: MenuBevandeComponent}
 ];
 
 @NgModule({
@@ -24,7 +27,7 @@ const LISTA_ROUTES = [
     MenuHomeComponent,
     MenuNoGlutineComponent,
     MenuNormaleComponent,
-    NavbarComponent,
+    NavbarComponent,MenuBevandeComponent, NavfooterComponent
   ],
   bootstrap: [AppComponent],
 })
